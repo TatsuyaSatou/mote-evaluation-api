@@ -13,5 +13,6 @@ AS = 'LQ8xXBTTN8F8CHQv9oDAqsGJFeexdnFf2DFzn3EzGH2L8'
 
 def get_instance(rest_url, params):
     url = BASEURL + rest_url
+    print(url)
     twitter = OAuth1Session(CK, CS, AT, AS)
     return twitter.get(url, params=params)

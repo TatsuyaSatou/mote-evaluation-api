@@ -1,3 +1,4 @@
+cPickle
 flask
 sklearn
 numpy

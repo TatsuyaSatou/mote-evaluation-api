@@ -14,10 +14,7 @@ def mote_eval(screenname):
     except:
         abort(404)
 
-    ratio = mote.calc_mote()
-    result = {
-        "ratio": ratio,
-    }
+    result = mote.calc_mote(screenname)
     return make_response(jsonify(result))
 
 
